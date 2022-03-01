@@ -1,5 +1,5 @@
 <?php
-include '../api/data.php';
+include '../../api/data.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,14 +9,14 @@ include '../api/data.php';
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="../css/style.css">
    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css' integrity='sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==' crossorigin='anonymous' />
    <title>PHP AJAX DISCHI M1</title>
 </head>
 
 <body>
    <header class="d-flex align-items-center">
-      <img role="button" class="d-block" src="./img//spotify-logo.png" alt="Spotify">
+      <img role="button" class="d-block" src="../img/spotify-logo.png" alt="Spotify">
    </header>
    <main class="d-flex align-items-center">
       <div class="card-container container">
