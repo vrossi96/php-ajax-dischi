@@ -1,0 +1,38 @@
+header {
+   height: 90px;
+   background-color: #2e3a46;
+}
+main {
+   height: calc(100vh - 90px);
+   background-color: #1e2d3b;
+}
+
+.card-container{
+   border: 2px solid white;
+}
+
+.row .col-1-5{
+   flex: 0 0 auto;
+   width: 20%;
+   border: 2px solid red;
+}
+.card-song {
+   background-color: #2e3a46;
+   padding: 15px;
+   height: 100%;
+   border: 2px solid yellow;
+}
+p {
+   margin: 0;
+}
+
+.song-title {
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 27px;
+   color: #fff;
+}
+.song-desc{
+   color: rgb(201, 201, 201);
+   margin-bottom: 0;
+}
