@@ -15,20 +15,24 @@ include '../api/data.php';
 </head>
 
 <body>
-   <header></header>
+   <header class="d-flex align-items-center">
+      <img role="button" class="d-block" src="./img//spotify-logo.png" alt="Spotify">
+   </header>
    <main class="d-flex align-items-center">
       <div class="card-container container">
-         <div class="row">
-            <div class="col-1-5">
-               <div class="card-song text-center">
-                  <img class="img-fluid" src="<?php echo $database[0]['poster'] ?>" alt="">
-                  <p class="song-title"><?php echo $database[0]['title'] ?></p>
-                  <div>
-                     <p class="song-desc"><?php echo $database[0]['author'] ?></p>
-                     <p class="song-desc"><?php echo $database[0]['year'] ?></p>
+         <div class="row gx-4 gy-3">
+            <?php foreach ($database as $song) : ?>
+               <div class="col-1-5">
+                  <div class="card-song text-center">
+                     <img class="img-fluid" src="<?php echo $song['poster'] ?>" alt="<?php echo $song['title'] ?>">
+                     <p class="song-title"><?php echo $song['title'] ?></p>
+                     <div>
+                        <p class="song-desc"><?php echo $song['author'] ?></p>
+                        <p class="song-desc"><?php echo $song['year'] ?></p>
+                     </div>
                   </div>
                </div>
-            </div>
+            <?php endforeach; ?>
          </div>
       </div>
    </main>
